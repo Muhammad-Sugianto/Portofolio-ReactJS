@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-list li {
+  margin-right: 20px;
+}
+
+.navbar-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-list li a:hover {
+  color: #5c00ff;
+}
+
+Biodata Container CSS .biodata-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: left;
+  padding: 125px;
+  background: linear-gradient(to bottom right, #5c00ff, #ff00e0);
+  color: #121010;
+  animation: gradientAnimation 10s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(to bottom right, #5c00ff, #ff00e0);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #ff00e0, #5c00ff);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #5c00ff, #ff00e0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Profile Pic CSS */
+.profile-pic {
+  width: 350px; /* Ubah lebar sesuai kebutuhan */
+  height: 350px; /* Ubah tinggi sesuai kebutuhan */
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info CSS */
+.info {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+}
+
+.info ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.info ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info ul li img.icon {
+  width: 20px;
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.info .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* 
+@keyframes scaleText {
+  0% {
+    transform: scale(0);
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
+
+.biodata-title {
+  margin: 0;
+  padding: 0;
+  animation: scaleText 4s ease infinite;
+} */

@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.education-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.education-card {
+  background-color: #948f8f;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+}

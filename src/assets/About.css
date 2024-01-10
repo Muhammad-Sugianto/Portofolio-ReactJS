@@ -1,0 +1,63 @@
+/* About Container CSS */
+.about-container {
+  padding: 100px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #5c00ff, #ff00e0);
+  color: #fff; /* Warna teks yang kontras dengan latar belakang */
+  animation: gradientAnimation 10s ease infinite alternate;
+  background-color: #f5f5f5;
+  font-size: 30px;
+}
+
+/* About Content CSS */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Left CSS (Foto Profil) */
+.about-left {
+  flex: 0.5; /* Lebar ruang yang lebih besar untuk foto */
+}
+
+/* About Profile Pic CSS */
+.about-profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  transition: margin-left 0.5s ease-in-out; /* Menambahkan efek transisi */
+}
+
+/* About Right CSS */
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+/* About Title CSS */
+.about-title {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* About Description CSS */
+.about-description {
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.about-container:hover .about-profile-pic {
+  margin-left: -50px; /* Jarak yang diinginkan ke kiri saat hover */
+}
